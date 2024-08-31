@@ -114,28 +114,28 @@ If your ESP32 is not showing up in the device list or won't get recognized you w
 Here are both pinouts for HSPI and VSPI. You need both nRF24L01 modules connected in order to achieve full capability of the device.                
 [nRF24L01+ pinout](https://dwdwpld.pages.dev/nRF24L01pinout.png)
 ### HSPI
-| 1st nRF24L01 module Pin | HSPI Pin (ESP32) | 10uf capacitor |
-|---------------|------------------|--------------------|
-| VCC           | 3.3V             | (+) capacitor |
-| GND           | GND              | (-) capacitor |
-| CE            | GPIO 16          |
-| CSN           | GPIO 15          |
-| SCK           | GPIO 14          |
-| MOSI          | GPIO 13          |
-| MISO          | GPIO 12          |
-| IRQ           |                  |
+|Pin| 1st nRF24L01 module Pin | HSPI Pin (ESP32) | 10uf capacitor |
+|---|---------------|------------------|--------------------|
+| 2 | VCC           | 3.3V             | (+) capacitor |
+| 1 | GND           | GND              | (-) capacitor |
+| 3 | CE            | GPIO 16          |
+| 4 | CSN           | GPIO 15          |
+| 5 | SCK           | GPIO 14          |
+| 6 | MOSI          | GPIO 13          |
+| 7 | MISO          | GPIO 12          |
+| 8 | IRQ           |                  |
 
 ### VSPI 
-| 2nd nRF24L01 module Pin | VSPI Pin (ESP32) | 10uf capacitor |
-|---------------|------------------|--------------------|
-| VCC           | 3.3V             | (+) capacitor |
-| GND           | GND              | (-) capacitor |
-| CE            | GPIO 22          |
-| CSN           | GPIO 21          |
-| SCK           | GPIO 18          |
-| MOSI          | GPIO 23          |
-| MISO          | GPIO 19          |
-| IRQ           |                  |
+|Pin| 2nd nRF24L01 module Pin | VSPI Pin (ESP32) | 10uf capacitor |
+|---|---------------|------------------|--------------------|
+| 2 | VCC           | 3.3V             | (+) capacitor |
+| 1 | GND           | GND              | (-) capacitor |
+| 3 | CE            | GPIO 22          |
+| 4 | CSN           | GPIO 21          |
+| 5 | SCK           | GPIO 18          |
+| 6 | MOSI          | GPIO 23          |
+| 7 | MISO          | GPIO 19          |
+| 8 | IRQ           |                  |
 
 ### Battery mod (optional)
 | 3.7V Li-Ion battery | JST-PH2 connector    | TP4056 Charging Module | Mini Slide Switch | ESP32 | 4.7k Ohm Resistor | 3mm Status LED (blue)|
